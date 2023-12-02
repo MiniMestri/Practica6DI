@@ -3,11 +3,9 @@
     <opcion tipo="check1" text="Pares">
         <texto tipo="label" text="Elige el numero"></texto>
         <eleccion tipo="entry"></eleccion>
-        <resultado tipo="label" text="Resultado "></resultado>
     </opcion>
     <opcion tipo="check2" text="Nones">
         <texto tipo="label" text="Elige el numero"></texto>
         <eleccion tipo="entry"></eleccion>
-        <resultado tipo="label" text="Ganador "></resultado>
     </opcion>
 </juego>
