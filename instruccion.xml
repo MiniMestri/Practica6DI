@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<interfaz>
-    <campo tipo="entrada"></campo>
-    <campo tipo="etiqueta"></campo>
-    <campo tipo="boton"></campo>
-</interfaz>
+<juego>
+    <opcion tipo="check" text="Pares">
+        <texto tipo="label" text="Elige el numero"></texto>
+        <eleccion tipo="entry"></eleccion>
+        <resultado tipo="label" text="Resultado "></resultado>
+    </opcion>
+    <opcion tipo="check" text="Nones">
+        <texto tipo="label" text="Elige el numero"></texto>
+        <eleccion tipo="entry"></eleccion>
+        <resultado tipo="label" text="Ganador "></resultado>
+    </opcion>
+</juego>
