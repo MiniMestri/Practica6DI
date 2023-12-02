@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <juego>
-    <opcion tipo="check" text="Pares">
+    <opcion tipo="check1" text="Pares">
         <texto tipo="label" text="Elige el numero"></texto>
         <eleccion tipo="entry"></eleccion>
         <resultado tipo="label" text="Resultado "></resultado>
     </opcion>
-    <opcion tipo="check" text="Nones">
+    <opcion tipo="check2" text="Nones">
         <texto tipo="label" text="Elige el numero"></texto>
         <eleccion tipo="entry"></eleccion>
         <resultado tipo="label" text="Ganador "></resultado>
