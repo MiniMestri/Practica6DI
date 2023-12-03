@@ -60,7 +60,7 @@ for eleccion in xml.find_all("eleccion"):
         spin2.grid(row=2,column=0,padx=75,pady=20)
         
 
-ttk.Button(ventana,text="JUGAR",command=lambda: jugar()).grid(row=4,column=0,padx=294,pady=250)
+ttk.Button(ventana,text="JUGAR",command=jugar).grid(row=4,column=0,padx=294,pady=250)
 
 raiz.mainloop()
  
