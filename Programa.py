@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import tkinter as tk
 from tkinter import ttk
 
+#Método para calcular quien ha sido el ganador
 def calculo(valor1,valor2):
     valor1=int(spin1.get())
     valor2=int(spin2.get())
@@ -11,13 +12,16 @@ def calculo(valor1,valor2):
         return "PARES"
     else:
         return "NONES"
+
+#Método para generar acción el programa y decir quien es el ganador 
 def jugar():
     resultado1=spin1.get()
     resultado2=spin2.get()
 
     ttk.Label(marco1,text="EL GANADOR HA SIDO ",background="yellow").grid(row=3,column=0,padx=75,pady=20)
     ttk.Label(marco2,text=calculo(resultado1,resultado2),background="orange").grid(row=3,column=0,padx=75,pady=20)
-    
+
+#Inicio del main con la interfaz
 raiz = tk.Tk()
 
 raiz.geometry(f"{670}x{300}")
@@ -31,10 +35,12 @@ ventana.add(marco2)
 
 ventana.pack(fill=tk.BOTH,expand=True)
 
+#Apertura, lectura y obtención del xml
 archivo=open("instruccion.xml","r")
 contenido=archivo.read()
 xml=BeautifulSoup(contenido,"xml")
 
+#Tratamiento del contenido xml mediante for 
 for opcion in xml.find_all("opcion"):
     tipo=opcion.get("tipo")
     texto=opcion.get("text")
